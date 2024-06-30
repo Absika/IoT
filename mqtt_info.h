@@ -6,7 +6,7 @@
 #define MQTT_CLIENT_ID "IoT-2024"
 #define MQTT_PORT LWIP_IANA_PORT_MQTT
 #define MQTT_USER "absik"
-#define MQTT_PASS "aio_kuTE01AILxxwJZ8TpYbMevbmWH8C"
+#define MQTT_PASS ""
 #define DASHBOARDS "absik/dashboards/Iot-2024"
 #define MQTT_TOPIC_TEMP "absik/feeds/temp"
 #define MQTT_TOPIC_HUM "absik/feeds/humidity"

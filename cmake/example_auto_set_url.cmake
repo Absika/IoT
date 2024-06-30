@@ -1,0 +1,5 @@
+macro(example_auto_set_url TARGET)
+    get_filename_component(FULL_PATH "${CMAKE_CURRENT_LIST_DIR}" ABSOLUTE)
+    file(RELATIVE_PATH URL_REL_PATH "${CMAKE_SOURCE_DIR}" "${FULL_PATH}")
+    pico_set_program_url(${TARGET} "${CMAKE_SOURCE_DIR}/${URL_REL_PATH}")
+endmacro()

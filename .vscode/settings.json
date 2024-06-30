@@ -1,0 +1,97 @@
+{
+    // These settings tweaks to the cmake plugin will ensure
+    // that you debug using cortex-debug instead of trying to launch
+    // a Pico binary on the host
+    "cmake.statusbar.advanced": {
+        "debug": {
+            "visibility": "hidden"
+        },
+        "launch": {
+            "visibility": "hidden"
+        },
+        "build": {
+            "visibility": "hidden"
+        },
+        "buildTarget": {
+            "visibility": "hidden"
+        }
+    },
+    "cmake.buildBeforeRun": true,
+    "cmake.configureOnOpen": true,
+    "cmake.configureSettings": {
+      "CMAKE_MODULE_PATH": "${env:PICO_INSTALL_PATH}/pico-sdk-tools"
+    },
+    "cmake.generator": "Ninja",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "*.json": "cpp",
+        "freertos.h": "c",
+        "stdlib.h": "c",
+        "math.h": "c",
+        "spi.h": "c",
+        "cstddef": "cpp",
+        "compare": "cpp",
+        "time.h": "c",
+        "semphr.h": "c",
+        "stdio.h": "c",
+        "mcp3008.h": "c",
+        "unistd.h": "c",
+        "wiringpi.h": "c",
+        "cyw43_arch.h": "c",
+        "task.h": "c",
+        "ssi.h": "c",
+        "lwipopts.h": "c",
+        "cgi.h": "c",
+        "httpd.h": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "portable.h": "c",
+        "httpd_opts.h": "c",
+        "iana.h": "c",
+        "opt.h": "c",
+        "err.h": "c",
+        "arch.h": "c",
+        "pbuf.h": "c",
+        "adc.h": "c",
+        "cyw43_country.h": "c",
+        "cyw43.h": "c",
+        "cyw43_config.h": "c",
+        "freertosconfig.h": "c",
+        "pwm.h": "c",
+        "netdb.h": "c",
+        "sockets.h": "c",
+        "string.h": "c",
+        "dma.h": "c",
+        "sys.h": "c",
+        "lwiperf.h": "c",
+        "timer.h": "c",
+        "netif.h": "c",
+        "mqtt_example.h": "c",
+        "dns.h": "c",
+        "ip_addr.h": "c",
+        "mqtt.h": "c",
+        "gpio.h": "c",
+        "mqtt_priv.h": "c",
+        "crypto_consts.h": "c",
+        "altcp_tcp.h": "c",
+        "altcp_tls.h": "c",
+        "rosc.h": "c",
+        "tcp.h": "c",
+        "mqtt_info.h": "c",
+        "typeinfo": "c",
+        "timers.h": "c",
+        "queue.h": "c",
+        "multicore.h": "c",
+        "posix_sockets.h": "c",
+        "types.h": "c",
+        "mqttproperties.h": "c",
+        "irq.h": "c",
+        "uart.h": "c",
+        "binary_info.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

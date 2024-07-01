@@ -371,9 +371,9 @@ The project involves several key connections and configurations, each component 
 ## Presenting the Data
 
 ### Dashboard
-- **Visualization**: Data displayed on a web-based dashboard using libraries like Chart.js or Google Charts.
-- **Database**: Data stored locally using SQLite for simplicity.
-- **Data Saving Frequency**: Every 10 seconds.
+- **Visualization**: Data is displayed on a web-based dashboard using Adafruit IO, providing real-time monitoring and control capabilities.
+- **Data Storage**: Data is stored and managed through Adafruit IO, ensuring easy access and analysis.
+- **Data Saving Frequency**: Every 10 seconds, data is uploaded to Adafruit IO for continuous tracking and visualization.
 
 ### Example Dashboard
 ![Presenting the Data](img/mqtt.png)
